@@ -39,6 +39,31 @@ li a {
 li a:hover {
     background-color: lightblue;
 }
+   
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
 </style>
 </head>
 <body>
@@ -48,13 +73,19 @@ li a:hover {
 
 <h1 style="color:white;text-align:center";class="border-style:inset">Veronica's Page</h1>
 <p style="color:white;text-align:center;font-size:12pt"><i>Hello! Welcome!</i></p>
-   
+<div class="tooltip"> 
 <ul>
   <li><a class="active" href="#home">About Me</a></li>
-  <li><a href="#news">Projects</a></li>
-  <li><a href="#contact">Core4Protfolio</a></li>
-  <li><a href="#about">Contact Me</a></li>
-</ul>
+   <span class="tooltiptext">About Me</span>
+   </u>
+</div>
+ <u>
+   <li><a href="#Projects">Projects</a></li>
+  <li><a href="#Core4Portfolio">Core4Portfolio</a></li>
+  <li><a href="#ContactMe">Contact Me</a></li>
+
+   </ul>
+  
 
 </body>
    
